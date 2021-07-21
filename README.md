@@ -199,4 +199,6 @@ round(|Rounds a given number|"Values": "average(eval(round([ERS.Positive] * 10) 
 
 #### Custom functions
 
+```
 "GetData": "(function(data) { var customScores = [1.25,0.98,0.75,2.65,1.35]; var result = []; for (var i = 0; i < data.length; i++) { var emotions = []; for (var e = 0; e < data[i].Emotion.length; e++) { emotions.push(data[i].Emotion[e]); } result.push({ "Respondent": data[i].Respondent, "CustomEmotionScore": emotions }); } })"
+```
