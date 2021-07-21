@@ -121,4 +121,23 @@ You can also define a min-height, to prevent the automatically distrubuted heigh
 
 ### Columns
 
+Very similarly to the rows, the columns are defined. The "width" attribute works the same way as the height in the rows. When set to "auto", it will distribute the available screen width to all columns equally.
+
+```
+"Rows": [
+  {
+    "height": "auto",
+    "min-height": "100px",
+    "Columns": [
+      {
+        "width": "auto",
+        "Elements": []
+      }
+    ]
+  }
+]
+```
+
 ### Elements
+
+Now the elements is where all the magic happens. An element can be chosen from a range of pre-defined elements, or even custom developed ones (for more details about custom developed elements, check out this example).
