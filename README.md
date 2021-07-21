@@ -188,7 +188,7 @@ There are a number of functions available to the user. Mainly very useful when c
 ```
 
 The available functions are:
-test|test|test
+Function|Description|Example
 ------------ | ------------- | -------------
 frequency(|Returns the value with the highest frequency of a given field.|"Values": "frequency([Market])"
 count(|Counts the occurrences of a field.|"Values": "count([City])"
