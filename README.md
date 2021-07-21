@@ -140,6 +140,23 @@ Very similarly to the rows, the columns are defined. The "width" attribute works
 
 ### Elements
 
-Now the elements is where all the magic happens. An element can be chosen from a range of pre-defined elements, or even custom developed ones (for more details about custom developed elements, check out [this](https://github.com/Phebi-AI/charting-sample-1) example).
+The elements is where all the magic happens. An element can be chosen from a range of pre-defined elements, or even custom developed ones (for more details about custom developed elements, check out [this](https://github.com/Phebi-AI/charting-sample-1) example).
+
+Which settings are available can differ to the element type. You can find a full list in the [Phebi Report-Elements Reference](#)
+
+```
+{
+  "Id": "filter_Segment",
+  "Type": "Filter_Select",
+  "FilterType": "Single",
+  "Label": "Gender",
+  "Values": "[Gender]",
+  "AllOption": true,
+  "Custom": false,
+  "Controls": [ "emotional_resonance" ]
+}
+```
+
+### Values syntax
 
 
