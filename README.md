@@ -159,4 +159,5 @@ Which settings are available can differ to the element type. You can find a full
 
 ### Values syntax
 
+The values syntax is used across different report elements and defines filters and what data to pass to the report element.
 
