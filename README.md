@@ -85,8 +85,9 @@ The report definition is quite simple. It mainly consists of rows, columns and e
 
 ### Title & Preview Image
 
-```
 The Report requires a name and thumbnail image encoded in base64 string. This is how the report will appear in the Phebi Portal under reports. 
+
+```
 "Title": "ERS",
   "Preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAMSURBVBhXY/j//z8ABf4C/qc1gYQAAAAASUVORK5CYII="
 ```
