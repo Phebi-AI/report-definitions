@@ -192,6 +192,9 @@ Function|Description|Example
 ------------ | ------------- | -------------
 frequency(|Returns the value with the highest frequency of a given field.|"Values": "frequency([Market])"
 count(|Counts the occurrences of a field.|"Values": "count([City])"
-total(|Returns a sum|"Values": "total([ERS.Positive])" or "total('[Market]' == )"
+total(|Returns the sum of the given input syntax|"Values": "total([ERS.Positive])"
+eval(|Evaluates the given input query.|"Values": "total(eval('[Market]' == 'Germany' ? 1 : 0))"
+average(|Returns the average of the given input syntax|"Values": "average([ERS.Positive])
+round(|Rounds a given number|"Values": "average(eval(round([ERS.Positive] * 10) / 10))"
 
 #### Custom functions
