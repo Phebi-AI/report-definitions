@@ -183,7 +183,11 @@ There are a number of functions available to the user. Mainly very useful when c
   "Filter": "eval('[Gender]' == 'Male')",
   "GroupBy": "[Market]",
   "Dimension": "[Market]",
-  "Values": "average([Sentiment.Compound])"
+  "Measure": "Sentiment",
+  "Measures": [
+    { "Name": "Market", "Values": "[Market]" },
+    { "Name": "Sentiment", "Values": "average([Sentiment.Compound])" }
+  ]
 }
 ```
 
