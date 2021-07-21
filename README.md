@@ -161,3 +161,35 @@ Which settings are available can differ to the element type. You can find a full
 
 The values syntax is used across different report elements and defines filters and what data to pass to the report element.
 
+```
+{
+  "Filter": "eval('[Gender]' == 'Male')",
+  "GroupBy": "[Market]"
+}
+```
+
+Square brackets retrieve a value from a data entry that can be used to compare to another value or a fixed data type. Fields are basic fields like respondent, sentiment and emotion scores, or tags that have been assinged to the data entry either manually through the user, or in a bulk import.
+
+A full list of available default fields can be found in the [Phebi Report-Elements Reference](#)
+
+#### Other functions
+
+There are a number of functions available to the user. Mainly very useful when combined with the "GroupBy" functionality. That way the system can calculate averages or frequencies that then can be passed to basic reports like a column or pie chart.
+
+```
+{
+  "Id": "chart1",
+  "Type": "Column"
+  "Filter": "eval('[Gender]' == 'Male')",
+  "GroupBy": "[Market]",
+  "Dimension": "[Market]",
+  "Values": "average([Sentiment.Compound])"
+}
+```
+
+The available functions are:
+frequency(|Returns the value with the highest frequency of a given field.|"Values": "frequency([Market])"
+count(|Counts the occurrences of a field.|"Values": "count([City])"
+total(|Returns a sum|"Values": "total([ERS.Positive])" or "total('[Market]' == )"
+
+#### Custom functions
