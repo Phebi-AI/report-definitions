@@ -107,6 +107,18 @@ The report is rendered like a table. It starts with rows and then columns within
 
 By default the row height is set to auto. That means it will distribute the available height to all rows with height set to "auto". If there is a row with a fixed height, for example for filters, the report renderer will substract the fixed height from the available space and distribute the remaining space to the rows with "auto" height.
 
+You can also define a min-height, to prevent the automatically distrubuted height dropping below a certain point on small screens:
+
+```
+"Rows": [
+  {
+    "height": "auto",
+    "min-height": "100px",
+    "Columns": []
+  }
+]
+```
+
 ### Columns
 
 ### Elements
