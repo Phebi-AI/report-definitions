@@ -89,10 +89,23 @@ The Report requires a name and thumbnail image encoded in base64 string. This is
 
 ```
 "Title": "ERS",
-  "Preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAMSURBVBhXY/j//z8ABf4C/qc1gYQAAAAASUVORK5CYII="
+"Preview": "data:image/png;base64,ImageAsBase64String"
 ```
 
 ### Rows
+
+The report is rendered like a table. It starts with rows and then columns within the rows.
+
+```
+"Rows": [
+  {
+    "height": "auto",
+    "Columns": []
+  }
+]
+```
+
+By default the row height is set to auto. That means it will distribute the available height to all rows with height set to "auto". If there is a row with a fixed height, for example for filters, the report renderer will substract the fixed height from the available space and distribute the remaining space to the rows with "auto" height.
 
 ### Columns
 
