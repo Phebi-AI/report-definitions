@@ -185,8 +185,8 @@ There are a number of functions available to the user. Mainly very useful when c
   "Dimension": "[Market]",
   "Measure": "Sentiment",
   "Measures": [
-    { "Name": "Market", "Values": "[Market]" },
-    { "Name": "Sentiment", "Values": "average([Sentiment.Compound])" }
+    { "Name": "Market", "Value": "[Market]" },
+    { "Name": "Sentiment", "Value": "average([Sentiment.Compound])" }
   ]
 }
 ```
@@ -194,12 +194,12 @@ There are a number of functions available to the user. Mainly very useful when c
 The available functions are:
 Function|Description|Values Example|Returns Example|Returns type
 ------------ | ------------- | ------------- | ------------- | -------------
-frequency(|Returns the value with the highest frequency of a given field.|"Values": "frequency([Market])"|Italy|string
-count(|Counts the occurrences of a field.|"Values": "count([City])"|Rome|string
-total(|Returns the sum of the given input syntax|"Values": "total([ERS.Positive])"|15.2|float
-eval(|Evaluates the given input query.|"Values": "total(eval('[Market]' == 'Germany' ? 1 : 0))"|10|float
-average(|Returns the average of the given input syntax|"Values": "average([ERS.Positive])|0.21514|float
-round(|Rounds a given number|"Values": "average(eval(round([ERS.Positive] * 10) / 10))"|0.21|float
+frequency(|Returns the value with the highest frequency of a given field.|"Value": "frequency([Market])"|Italy|string
+count(|Counts the occurrences of a field.|"Value": "count([City])"|Rome|string
+total(|Returns the sum of the given input syntax|"Value": "total([ERS.Positive])"|15.2|float
+eval(|Evaluates the given input query.|"Value": "total(eval('[Market]' == 'Germany' ? 1 : 0))"|10|float
+average(|Returns the average of the given input syntax|"Value": "average([ERS.Positive])|0.21514|float
+round(|Rounds a given number|"Value": "average(eval(round([ERS.Positive] * 10) / 10))"|0.21|float
 
 #### Custom functions
 
